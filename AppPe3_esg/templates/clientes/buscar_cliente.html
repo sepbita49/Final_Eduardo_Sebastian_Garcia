@@ -1,0 +1,35 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+BUSQUEDA DE CLIENTES
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="/APesg/buscar_cliente" method="get"> 
+        <ul>
+            <p>
+                Nro. Documento: <input type="text", name="documento">  
+                <input type="submit" value="Buscar" class="btn btn-success">
+            </p>
+        </ul>
+
+    </form>
+
+    <ul><p> {{mensaje}} </p></ul>
+    
+    {% for clientebus in resultados %}
+    
+        <ul><p> {{ clientebus}} </p></ul>
+
+        <button>
+            <a href="url 'actualizar_cliente' clientebus.documento " > Actualizar </a>
+        </button>  
+
+        <button>
+            <a href="url 'borrar_cliente' clientebus.documento " > Eliminar </a>
+        </button>  
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+PORTAL PEDIDOS REALIZADOS
+{% endblock%}
+
+
+{% block parrafo %}
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <form action="/APesg/crear_pedido">
+                
+                <input type="submit" value="GENERAR PEDIDO" class="btn btn-danger">
+                
+            </form>
+        
+            <form action="/APesg/buscar_pedido">
+                
+                <input type="submit" value="BUSCAR PEDIDO" class="btn btn-danger">
+                
+            </form>
+        </div>
+    </nav> 
+
+{% endblock %}

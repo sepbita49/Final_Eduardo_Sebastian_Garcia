@@ -1,0 +1,40 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+PORTAL PROVEEDORES
+{% endblock%}
+
+
+{% block parrafo %}
+
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+
+        <form action="/APesg/crear_proveedor">
+            
+            <input type="submit" value="CREAR PROVEEDOR" class="btn btn-success">
+            
+        </form>
+    
+        <form action="/APesg/buscar_proveedor">
+            
+            <input type="submit" value="BUSCAR PROVEEDOR" class="btn btn-success">
+            
+        </form>
+
+        <form action="/APesg/crear_compra">
+            
+            <input type="submit" value="REGISTRAR COMPRA" class="btn btn-dark">
+            
+        </form>
+        
+        <form action="/APesg/buscar_compra">
+            
+            <input type="submit" value="BUSCAR COMPRA" class="btn btn-dark">
+            
+        </form>     
+    
+        </div>
+    </nav>        
+
+{% endblock %}    

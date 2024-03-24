@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+
+{% block parrafo %}
+
+    <form action="" method="post"> {% csrf_token %}
+        
+        <ul>
+            <p> {{ formu }} </p>
+        </ul>
+            
+        <input type="submit" value="Iniciar Sesion" class="btn btn-success">
+        
+    </form>
+ 
+
+{% endblock %}

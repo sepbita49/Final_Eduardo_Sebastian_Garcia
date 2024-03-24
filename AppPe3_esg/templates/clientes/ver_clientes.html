@@ -1,0 +1,31 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+PORTAL CLIENTES
+{% endblock%}
+
+
+{% block parrafo %}
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <form action="/APesg/crear_cliente">
+                
+                <input type="submit" value="CREAR CLIENTE" class="btn btn-primary">
+                
+            </form>
+        
+            <form action="/APesg/buscar_cliente">
+                
+                <input type="submit" value="BUSCAR CLIENTE" class="btn btn-primary">
+                
+            </form>
+
+            <form action="/APesg/actualizar_cliente">
+                
+                <input type="submit" value="ACTUALIZAR CLIENTE" class="btn btn-primary">
+                
+            </form>            
+        </div>
+    </nav> 
+
+{% endblock %}

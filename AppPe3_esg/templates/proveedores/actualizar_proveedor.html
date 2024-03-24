@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+Actualiza los datos del proveedor
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="" method="post"> {% csrf_token %}
+        
+        <ul>
+            <p> {{ formu_prov }} </p>
+        </ul>
+            
+        <input type="submit" value="Guardar" class="btn btn-success">
+        
+    </form>
+ 
+
+{% endblock %}
+

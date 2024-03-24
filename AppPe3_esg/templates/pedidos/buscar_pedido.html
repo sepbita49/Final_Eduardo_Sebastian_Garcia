@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+ENCONTRA LOS PEDIDOS REALIZADOS POR NUESTROS CLIENTES
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="/APesg/buscar_pedido" method="get"> 
+        <ul>
+            <p>
+                DOCUMENTO: <input type="text", name="documento">  
+                <input type="submit" value="Buscar" class="btn btn-success">
+            </p>
+        </ul>
+
+    </form>
+
+    <ul><p> {{ mensaje }} </p></ul>
+    
+    {% for pedidobus in resultados %}
+    
+        <ul><p> {{ pedidobus }} </p></ul>
+
+        <button>
+            <a href="url 'actualizar_pedido' pedidobus.Id " > Actualizar </a>
+        </button>  
+
+        <button>
+            <a href="url 'borrar_pedido' pedidobus.Id " > Eliminar </a>
+        </button>  
+
+
+    {% endfor %}
+
+{% endblock %}

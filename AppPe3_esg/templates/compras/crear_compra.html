@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+Ingresa los datos para registrar la compra de insumos
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="" method="post"> {% csrf_token %}
+        
+        <ul>
+            <p> {{ formu_compra }} </p>
+        </ul>
+            
+        <input type="submit" value="Guardar" class="btn btn-success">
+        
+    </form>
+ 
+
+{% endblock %}

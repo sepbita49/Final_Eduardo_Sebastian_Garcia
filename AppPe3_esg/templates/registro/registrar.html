@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+
+{% block parrafo %}
+
+    <form action="" method="POST"> {% csrf_token %}
+    
+        <ul>
+            <p> {{ formu_reg  }} </p>
+        </ul>
+           
+        <button type="submit"> Validar </button>
+        
+    </form>
+ 
+
+{% endblock %}

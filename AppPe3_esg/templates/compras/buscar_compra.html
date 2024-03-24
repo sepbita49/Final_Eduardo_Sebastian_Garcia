@@ -1,0 +1,35 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+COMPRAS REALIZADAS POR CUIT DE PROVEEDOR
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="/APesg/buscar_compra" method="get"> 
+        <ul>
+            <p>
+                CUIT: <input type="text", name="cuit_prov">  
+                <input type="submit" value="Buscar" class="btn btn-success">
+            </p>
+        </ul>
+
+    </form>
+
+    <ul><p> {{mensaje}} </p></ul>
+    
+    {% for comprabus in resultados %}
+    
+        <ul><p> {{ comprabus }} </p></ul>
+
+        <button>
+            <a href="url 'actualizar_compra' comprabus.Id " > Actualizar </a>
+        </button>  
+
+        <button>
+            <a href="url 'borrar_compra' comprabus.Id " > Eliminar </a>
+        </button>  
+
+    {% endfor %}
+
+{% endblock %}

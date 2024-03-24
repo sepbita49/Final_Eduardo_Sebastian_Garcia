@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+
+{% block titulo %}
+Completa los datos para cargar un nuevo Proveedor
+{% endblock%}
+
+{% block parrafo %}
+
+    <form action="" method="post"> {% csrf_token %}
+        
+        <ul>
+            <p> {{ formu_prov }} </p>
+        </ul>
+            
+        <input type="submit" value="Guardar" class="btn btn-success">
+        
+    </form>
+ 
+
+{% endblock %}
