@@ -35,6 +35,7 @@ buscar cliente      - http://127.0.0.1:8000/APesg/buscar_cliente/
 buscar proveedor    - http://127.0.0.1:8000/APesg/buscar_proveedor/
 buscar compra       - http://127.0.0.1:8000/APesg/buscar_compra/
 buscar pedido       - http://127.0.0.1:8000/APesg/buscar_pedido/
+
 9- Portal Administrador. accediendo desde http://127.0.0.1:8000/admin/. desde aqui se puede administrar los permisos y realizar modificaciones en la base de datos. Acceder se utilizan los siguientes datos.
 
 Usuario: Admin
